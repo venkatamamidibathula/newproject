@@ -1,5 +1,21 @@
 name: newbuildproject
-on: [workflow_dispatch, push]
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature/*
+  pull_request:
+    types:
+      - opened
+    branches:
+      - master
+      - develop
+      - feature/*
+  workflow_dispatch:
+  paths_ignore:
+    - 'README.md'
+    - '.github/workflows/**'
 jobs:
   lint:
     runs-on: ubuntu-latest
