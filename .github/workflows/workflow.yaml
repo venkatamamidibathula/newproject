@@ -13,9 +13,9 @@ on:
   #     - develop
   #     - feature/*
   workflow_dispatch:
-  paths_ignore:
-    - 'README.md'
-    - '.github/workflows/**'
+  # paths_ignore:
+  #   - 'README.md'
+  #   - '.github/workflows/**'
 jobs:
   lint:
     runs-on: ubuntu-latest
