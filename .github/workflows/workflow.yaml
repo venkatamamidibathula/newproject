@@ -1,17 +1,17 @@
 name: newbuildproject
 on:
-  push:
-    branches:
-      - master
-      - develop
-      - feature/*
-  pull_request:
-    types:
-      - opened
-    branches:
-      - master
-      - develop
-      - feature/*
+  # push:
+  #   branches:
+  #     - master
+  #     - develop
+  #     - feature/*
+  # pull_request:
+  #   types:
+  #     - opened
+  #   branches:
+  #     - master
+  #     - develop
+  #     - feature/*
   workflow_dispatch:
   paths_ignore:
     - 'README.md'
